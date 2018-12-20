@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-cockpit (nameo)="onAddServe($event)"
+                   (nameo1)="onAddBlue($event)"></app-cockpit>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-server-element *ngFor="let el of serverElements"
+      [elemento]="el"></app-server-element>
+    </div>
+  </div>
+</div>
